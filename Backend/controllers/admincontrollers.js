@@ -5,7 +5,7 @@ const signupAdmin = async(req, res)=>{
         // create a new admin
         const admin = new Admin({name, email, password});
         await admin.save();
-        res.status(201).json({message:"Admin Signup Sucessfully:", admin:admin});
+        res.status(201).json({message:"Admin Signup Sucessfully!:", admin:admin});
     }
     catch(error){
         console.error(error);
