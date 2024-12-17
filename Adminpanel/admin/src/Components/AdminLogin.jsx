@@ -52,7 +52,6 @@ const Login = () => {
         });
       } else if (error.request) {
         console.log("No Response From Server", error.request);
-
         Swal.fire({
           title: "Server Error!",
           text: "No response from server. Please try again later.",
@@ -61,7 +60,6 @@ const Login = () => {
         });
       } else {
         console.log("Error During Login", error.message);
-
         Swal.fire({
           title: "Error!",
           text: "An unexpected error occurred. Please try again.",
@@ -71,7 +69,6 @@ const Login = () => {
       }
     }
   };
-
   return (
     <div className="login-container">
       <form onSubmit={handleSubmit}>
@@ -92,5 +89,4 @@ const Login = () => {
     </div>
   );
 };
-
 export default Login;
