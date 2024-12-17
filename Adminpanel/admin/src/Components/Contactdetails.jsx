@@ -10,7 +10,6 @@ function Contactdetails  ()  {
         <th>Name</th>
         <th>Email</th>
         <th>Mobile No</th>
-        <th>Address</th>
         <th>Message</th>
        </tr>
        </thead>
